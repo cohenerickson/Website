@@ -1,9 +1,11 @@
-export default function About () {
+import type { JSX } from 'solid-js';
+
+export default function About (): JSX.Element {
   return (
     <div id="about">
       <div class="grid grid-cols-1 sm:grid-cols-2 m-10 sm:m-20 gap-6">
         <div class="flex justify-center items-center">
-          <img class="h-64" src="/images/undraw_profile_re_4a55.svg"></img>
+          <img class="h-64" src="/images/undraw_profile_re_4a55.svg" alt="Profile"></img>
         </div>
         <div class="flex items-center">
           <div class="block">

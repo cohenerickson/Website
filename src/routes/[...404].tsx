@@ -1,4 +1,6 @@
-export default function NotFound () {
+import type { JSX } from 'solid-js';
+
+export default function NotFound (): JSX.Element {
   return (
     <>
       <div class="flex flex-col justify-center p-16">

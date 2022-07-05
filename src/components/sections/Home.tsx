@@ -1,4 +1,6 @@
-export default function () {
+import type { JSX } from 'solid-js';
+
+export default function (): JSX.Element {
   return (
     <div id="home">
       <div class="grid grid-cols-1 sm:grid-cols-2 m-10 sm:m-20 gap-6">
@@ -9,7 +11,7 @@ export default function () {
           </div>
         </div>
         <div class="flex justify-center items-center">
-          <img class="h-64" src="/images/undraw_code_typing_re_p8b9.svg"></img>
+          <img class="h-64" src="/images/undraw_code_typing_re_p8b9.svg" alt="Code Typing"></img>
         </div>
       </div>
     </div>
