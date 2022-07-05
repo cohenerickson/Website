@@ -6,12 +6,12 @@ import Contact from "../components/sections/Contact";
 
 export default function Index () {
   return (
-    <>
+    <div>
       <Home />
       <Projects />
       <About />
       <Skills />
       <Contact />
-    </>
+    </div>
   );
 }
