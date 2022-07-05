@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .h-content {
-  height: calc(100% - 48px);
+  height: calc(100% - 74px);
 }
 
 .text-transparent {
@@ -36,4 +36,24 @@
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   --tw-gradient-to: #ff0044;
   transition: 0.2s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #161616;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 100vh;
+  border: 3px solid #161616;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
 }
