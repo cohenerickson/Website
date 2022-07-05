@@ -13,7 +13,7 @@ export default function Contact (): JSX.Element {
           </div>
           <div class="my-5">
             <h2 class="font-black text-2xl text-primary pb-2">Message</h2>
-            <textarea id="message" class="w-full md:w-2/3 p-2 text-primary font-black bg-background border-2 border-primary rounded focus:gradient-border"></textarea>
+            <textarea id="message" class="w-full md:w-2/3 p-2 h-32 text-primary font-black bg-background border-2 border-primary rounded focus:gradient-border"></textarea>
           </div>
           <a target="_blank" href="mailto:contact@cohenerickson.com" id="send" class="p-2 text-primary font-black border-2 border-primary rounded hover:gradient-border">Send</a>
         </div>

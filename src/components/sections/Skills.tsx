@@ -20,6 +20,7 @@ export default function Projects (): JSX.Element {
           <Card icon="tailwindcss.svg" heading="Tailwind CSS">Since 2021</Card>
           <Card icon="typescript.svg" heading="TypeScript">Since 2021</Card>
           <Card icon="python.svg" heading="Python">Since 2022</Card>
+          <Card icon="solidjs.svg" heading="SolidJS">Since 2022</Card>
           <Card icon="storybook.svg" heading="Storybook">Since 2022</Card>
 
         </div>
