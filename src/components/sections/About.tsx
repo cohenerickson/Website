@@ -3,7 +3,7 @@ export default function About () {
     <div id="about">
       <div class="grid grid-cols-1 sm:grid-cols-2 m-10 sm:m-20 gap-6">
         <div class="flex justify-center items-center">
-          <img class="h-64" src="/undraw_profile_re_4a55.svg"></img>
+          <img class="h-64" src="/images/undraw_profile_re_4a55.svg"></img>
         </div>
         <div class="flex items-center">
           <div class="block">

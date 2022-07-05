@@ -9,7 +9,7 @@ export default function () {
           </div>
         </div>
         <div class="flex justify-center items-center">
-          <img class="h-64" src="/undraw_code_typing_re_p8b9.svg"></img>
+          <img class="h-64" src="/images/undraw_code_typing_re_p8b9.svg"></img>
         </div>
       </div>
     </div>
