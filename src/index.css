@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.h-content {
+  height: calc(100% - 48px);
+}
+
+.text-transparent {
+  color: transparent;
+}
+
+.hover\:text-transparent:hover {
+  color: transparent;
+}
+
+.NavbarButton {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #6600ff;
+  --tw-gradient-to: rgb(102 0 255 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #ff0044;
+}
+
+.NavbarButton:hover {
+  background: white;
+  transition: 0.2s ease-in-out;
+}
+
+.NavbarButton:hover div span {
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #6600ff;
+  --tw-gradient-to: rgb(102 0 255 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #ff0044;
+  transition: 0.2s ease-in-out;
+}
