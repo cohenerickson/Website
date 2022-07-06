@@ -3,7 +3,7 @@ import NavbarButton from "./NavbarButton";
 
 export default function Nav (props): JSX.Element {
   return (
-    <nav class="bg-background rounded w-full h-16 mb-2">
+    <nav class="bg-background rounded-t w-full h-16 border-b border-primary">
       <div class="w-full h-full flex justify-center items-center">
         <NavbarButton href="/#home">Home</NavbarButton>
         <NavbarButton href="/#projects">Projects</NavbarButton>

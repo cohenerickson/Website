@@ -31,7 +31,7 @@ export default function Root() {
       </head>
       <body class="antialiased bg-gradient-to-r from-accent to-accent2 p-2 h-full overflow-hidden">
         <Nav/>
-        <div class="bg-background rounded h-content overflow-y-auto overflow-x-hidden scroll-smooth">
+        <div class="bg-background rounded-b h-content overflow-y-auto overflow-x-hidden scroll-smooth">
           <ErrorBoundary>
             <Suspense>
               <Routes />
