@@ -12,7 +12,7 @@ export default function Root() {
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <meta name="theme-color" content="#161616" />
+        <meta name="theme-color" content="#DB006F" />
 
         <title>Cohen Erickson</title>
         <meta property="og:title" content="Cohen Erickson" />
@@ -26,6 +26,7 @@ export default function Root() {
         <meta name="keywords" content="cohen, erickson, fohen erickson, developer, full stack, front end, back end, radon games, appeal, link bot, osana, programming" />
 
         <script src="/js/contact.js" defer></script>
+        <script data-goatcounter="https://analytics.cohenerickson.com/count" async src="/js/count.js"></script>
         <Meta />
         <Links />
       </head>
