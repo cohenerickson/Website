@@ -18,8 +18,8 @@ export default function Footer (): JSX.Element {
             <h1 class="font-black text-4xl text-primary py-2">~</h1>
             <ul>
               <li class="font-black text-2xl text-primary">7 hours of code</li>
-              <li class="font-black text-2xl text-primary">45 files</li>
-              <li class="font-black text-2xl text-primary">000KB</li>
+              <li class="font-black text-2xl text-primary">38 files</li>
+              <li class="font-black text-2xl text-primary">388 KB</li>
               <li class="font-black text-2xl text-primary">2 redesigns</li>
             </ul>
           </div>
