@@ -17,14 +17,41 @@
     // Configure properties specific to VS Code.
     "vscode": {
       // Add the IDs of extensions you want installed when the container is created.
-      "extensions": ["dbaeumer.vscode-eslint"]
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "akamud.vscode-theme-onedark",
+        "formulahendry.auto-rename-tag",
+        "bungcip.better-toml",
+        "matthewpi.caddyfile-support",
+        "zamerick.vscode-caddyfile-syntax",
+        "whosydd.carbon",
+        "ms-azuretools.vscode-docker",
+        "erikpukinskis.chrome-codespaces-keymap",
+        "mikestead.dotenv",
+        "DigitalBrainstem.javascript-ejs-support",
+        "necinc.elmmet",
+        "GitHub.copilot",
+        "eamodio.gitlens",
+        "pkosta2005.heroku-command",
+        "wix.vscode-import-cost",
+        "bierner.lit-html",
+        "ritwickdey.LiveServer",
+        "bierner.markdown-preview-github-styles",
+        "PKief.material-icon-theme",
+        "silvenon.mdx",
+        "MateusHenriqueNascimentoSoares.mit-license-generator",
+        "esbenp.prettier-vscode",
+        "LouisWT.regexp-preview",
+        "bernardogualberto.solidjs",
+        "solidjs-community.solid-snippets",
+        "bradlc.vscode-tailwindcss",
+        "Gruntfuggly.todo-tree"
+      ]
     }
   },
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  "forwardPorts": [
-		3000
-	],
+  "forwardPorts": [3000],
 
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": "npm install",

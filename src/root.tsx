@@ -22,7 +22,7 @@ export default function Root(): JSX.Element {
         <Meta charset="utf-8" />
         <Meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Body>
+      <Body class="bg-bgPrimary text-textPrimary font-serif overflow-hidden">
         <Suspense>
           <ErrorBoundary>
             <Routes>
