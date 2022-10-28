@@ -9,16 +9,22 @@ img {
   -moz-user-drag: none;
   -o-user-drag: none;
   user-drag: none;
+  user-select: none;
 }
 
 /* vanilla-tilt paralax effect */
-*[data-tilt] {
+[data-tilt] {
   transform-style: preserve-3d;
   transform: perspective(1000px);
 }
 
-*[data-tilt] * {
+[data-tilt] * {
   transform: translateZ(20px);
+}
+
+/* cubic-bezier */
+.cubic-bezier {
+  transition-timing-function: cubic-bezier(0, 0, 0, 1);
 }
 
 /* expanding border effect */
@@ -56,4 +62,19 @@ img {
 }
 ::-webkit-scrollbar-thumb:hover {
   border: 4px solid #0a0f14;
+}
+
+/* FadeIn */
+.fade-in {
+  transform: translateY(8vh);
+  opacity: 0;
+  visibility: hidden;
+  will-change: opacity, visibility;
+  transition: all 1s;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
 }
