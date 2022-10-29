@@ -7,6 +7,7 @@ interface SEOProps {
   keywords: string;
   image: string;
   color: string;
+  gtag: string;
 }
 
 export default function SEO(props: SEOProps): JSX.Element {
@@ -33,6 +34,18 @@ export default function SEO(props: SEOProps): JSX.Element {
       <Meta name="description" content={props.description} />
       <Meta property="og:description" content={props.description} />
       <Meta name="keywords" content={props.keywords} />
+
+      <script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${props.gtag}`}
+      ></script>
+      <script>
+        {`window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '${props.gtag}');`}
+      </script>
     </>
   );
 }
