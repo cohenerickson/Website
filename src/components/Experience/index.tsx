@@ -5,7 +5,7 @@ import Item from "./Item";
 export default function About(): JSX.Element {
   return (
     <FadeIn
-      class="flex flex-col w-full justify-center gap-5 px-32 h-[calc(100vh-96px)]"
+      class="flex flex-col w-full justify-center gap-5 px-8 md:px-32 min-h-[calc(100vh-96px)]"
       id="experience"
     >
       <div class="flex items-center gap-5">

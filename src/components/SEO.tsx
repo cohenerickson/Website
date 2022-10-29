@@ -23,7 +23,9 @@ export default function SEO(props: SEOProps): JSX.Element {
       <Meta property="og:image" content={props.image} />
       <link rel="apple-touch-icon" href={props.image} />
 
-      <link href="/manifest.json" rel="manifest"></link>
+      <Meta name="twitter:card" content="summary" />
+
+      <link href="/manifest.webmanifest" rel="manifest"></link>
 
       <Meta name="robots" content="index, follow" />
       <Meta name="revisit-after" content="7 days" />

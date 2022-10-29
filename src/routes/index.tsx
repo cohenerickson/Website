@@ -29,7 +29,7 @@ export default function Home(): JSX.Element {
       <SideNav />
       <main
         id="scroll-container"
-        class={`h-[calc(100vh-96px)] overflow-y-scroll scroll-smooth cubic-bezier transition-opacity duration-1000 ${
+        class={`h-[calc(100vh-96px)] overflow-y-scroll overflow-x-hidden scroll-smooth cubic-bezier transition-opacity duration-1000 ${
           showContent() ? "opacity-1" : "opacity-0"
         }`}
       >
