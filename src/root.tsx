@@ -1,46 +1,46 @@
 // @refresh reload
-import { Links, Meta, Routes, Scripts } from "solid-start/root";
-import { ErrorBoundary } from "solid-start/error-boundary";
 import { Suspense } from "solid-js";
-import Nav from "./components/Nav";
-import "./build.css";
+import {
+  Body,
+  ErrorBoundary,
+  FileRoutes,
+  Head,
+  Html,
+  Meta,
+  Routes,
+  Scripts,
+  Title
+} from "solid-start";
+import { JSX } from "solid-js";
+import SEO from "~/components/SEO";
+import "./background";
+import "./root.css";
 
-export default function Root() {
+export default function Root(): JSX.Element {
   return (
-    <html lang="en" class="h-screen">
-      <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <Html lang="en">
+      <Head>
+        <SEO
+          title="Cohen Erickson"
+          description="I'm a young full stack developer working @A1Algo, a trading indicator startup. I'm also working on a few personal projects including Solid Timer, a Rubik's cube timer application."
+          color="#e65a45"
+          keywords="Cohen Erickson, Cohen, Erickson, cohen erickson, cohen, erickson, cohen erickson github, cohen erickson twitter, cohen erickson linkedin, cohen erickson instagram, cohen erickson youtube, cohen erickson twitch, cohen erickson reddit, cohen erickson facebook, cohen erickson tiktok, cohen erickson snapchat, cohen erickson tik tok, cohen erickson snap chat, cohen erickson github, cohen erickson twitter, cohen erickson linkedin, cohen erickson instagram, cohen erickson youtube, cohen erickson twitch, cohen erickson reddit, cohen erickson facebook, cohen erickson tiktok, cohen erickson snapchat, cohen erickson tik tok, cohen erickson snap chat, cohen erickson github, cohen erickson twitter, cohen erickson linkedin, cohen erickson instagram, cohen erickson youtube, cohen erickson twitch, cohen erickson reddit, cohen erickson facebook, cohen erickson tiktok, cohen erickson snapchat, cohen erickson tik tok, cohen erickson snap chat, cohen erickson github, cohen erickson twitter, cohen erickson linkedin, cohen erickson instagram, cohen erickson youtube, cohen erickson twitch, cohen erickson reddit, cohen erickson facebook, cohen erickson tiktok, cohen erickson snapchat, cohen erickson tik tok, cohen erickson snap chat, cohen erickson github, cohen erickson twitter, cohen erickson linkedin, cohen erickson instagram, cohen erickson youtube, cohen erickson twitch, cohen erickson reddit, cohen erickson facebook, cohen erickson tiktok, cohen erickson snapchat, cohen erickson tik tok, cohen erickson snap chat, cohen erickson github, cohen erickson twitter, cohen erickson linkedin, cohen erickson instagram, cohen erick"
+          image="/icons/512.png"
+          gtag="G-QJ9WT5WLNP"
+        />
 
-        <meta name="theme-color" content="#DB006F" />
-
-        <title>Cohen Erickson</title>
-        <meta property="og:title" content="Cohen Erickson" />
-
-        <meta name="description" content="Full stack hobbyist developer." />
-        <meta property="og:description" content="Full stack hobbyist developer." />
-
-        <meta name="robots" content="index, follow" />
-        <meta name="revisit-after" content="7 days" />
-
-        <meta name="keywords" content="cohen, erickson, fohen erickson, developer, full stack, front end, back end, radon games, appeal, link bot, osana, programming" />
-
-        <script src="/js/contact.js" defer></script>
-        <script data-goatcounter="https://analytics.cohenerickson.com/count" async src="/js/count.js"></script>
-        <Meta />
-        <Links />
-      </head>
-      <body class="antialiased bg-gradient-to-r from-accent to-accent2 p-2 h-full overflow-hidden">
-        <Nav/>
-        <div class="bg-background rounded-b h-content overflow-y-auto overflow-x-hidden scroll-smooth">
+        <script src="/pro.fontawesome.js" defer></script>
+      </Head>
+      <Body class="bg-bgPrimary text-textPrimary font-serif overflow-hidden">
+        <Suspense>
           <ErrorBoundary>
-            <Suspense>
-              <Routes />
-            </Suspense>
+            <Routes>
+              <FileRoutes />
+            </Routes>
           </ErrorBoundary>
-          <Scripts />
-        </div>
-      </body>
-    </html>
+        </Suspense>
+        <Scripts />
+      </Body>
+    </Html>
   );
 }

@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Prevent dragging of images */
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  user-select: none;
+}
+
+/* vanilla-tilt paralax effect */
+[data-tilt] {
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+[data-tilt] * {
+  transform: translateZ(20px);
+}
+
+/* cubic-bezier */
+.cubic-bezier {
+  transition-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+
+/* expanding border effect */
+.border-expand {
+  position: relative;
+}
+
+.border-expand::after {
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  content: "";
+  display: block;
+  width: 0%;
+  border-bottom: 3px solid #e65a45;
+  transition: width 0.3s;
+  transition-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+
+.border-expand:hover::after {
+  width: 100%;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0f14;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #e65a45;
+  border-radius: 20px;
+  border: 5px solid #0a0f14;
+}
+::-webkit-scrollbar-thumb:hover {
+  border: 4px solid #0a0f14;
+}
+
+/* FadeIn */
+.fade-in {
+  transform: translateY(8vh);
+  opacity: 0;
+  visibility: hidden;
+  will-change: opacity, visibility;
+  transition: all 1s;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
