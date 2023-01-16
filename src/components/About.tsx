@@ -18,28 +18,16 @@ export default function About(): JSX.Element {
       </div>
       <div class="text-4xl font-bold text-textSecondary">I make websites.</div>
       <p class="text-lg">
-        I'm a young full stack developer working{" "}
+        I'm a young full stack developer working on a few personal projects such as{" "}
         <a
-          href="//www.a1algo.com"
+          href="//github.com/cohenerickson/Velocity"
           target="_blank"
           class="text-accent border-expand"
-          title="A1Algo"
+          title="Velocity"
         >
-          @A1Algo
+          Velocity
         </a>
-        , a trading indicator startup.
-      </p>
-      <p class="text-lg">
-        I'm also working on a few personal projects including{" "}
-        <a
-          href="//github.com/cohenerickson/Solid-Timer"
-          target="_blank"
-          class="text-accent border-expand"
-          title="Solid Timer"
-        >
-          Solid Timer
-        </a>
-        , a Rubik's cube timer application.
+        , a tabbed proxy.
       </p>
       {/* <div class="flex w-full h-full items-center justify-center">
       <div

@@ -18,22 +18,22 @@ export default function About(): JSX.Element {
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8">
         <Project
-          name="Solid Timer"
-          link="//github.com/cohenerickson/Solid-Timer"
-          description="A Rubik's cube timer application inspired by ChaoTimer and csTimer."
-          image="/projects/stimer.png"
-        ></Project>
-        <Project
           name="Radon Games"
           link="//radon.games"
           description="An open-source unblocked games website built with simplicity in mind."
           image="/projects/radon.png"
         ></Project>
         <Project
-          name="A1Algo"
-          link="//a1algo.com"
-          description="An accurate momentum reversal indicator now available on TradingView."
-          image="/projects/a1.png"
+          name="Velocity"
+          link="//velocity.radon.games"
+          description="A highly customizable tabbed proxy for evading internet censorship."
+          image="/projects/velocity.png"
+        ></Project>
+        <Project
+          name="Solid Timer"
+          link="//github.com/cohenerickson/Solid-Timer"
+          description="A Rubik's cube timer application inspired by ChaoTimer and csTimer."
+          image="/projects/stimer.png"
         ></Project>
       </div>
     </FadeIn>
